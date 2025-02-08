@@ -26,7 +26,7 @@ export default function HeroSection() {
               alt="Globe with medical glove"
               width={554}
               height={408}
-              className="object-contain w-[300px] h-[220px] md:w-[554px] md:h-[408px]"
+              className="object-contain w-[300px] h-[220px] md:w-[600px] md:h-[500px]"
             />
           </div>
         </div>
