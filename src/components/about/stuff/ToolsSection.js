@@ -10,20 +10,18 @@ export default function ToolsSection({
   title,
   description,
   textClassName,
-  reverseOrder, // Prop to control the order
-  linkUrl, // Optional prop for the link URL
-  linkLabel, // Optional prop for the link label
+  reverseOrder,
+  linkUrl,
+  linkLabel,
 }) {
   return (
-    <section className="py-[50px]">
+    <section className="py-[30px] md:py-[50px]">
       <div className="container mx-auto px-4">
-        {/* Use flex-row or flex-row-reverse based on reverseOrder */}
         <div
-          className={`flex items-center gap-[100px] ${
-            reverseOrder ? "flex-row-reverse" : "flex-row"
-          }`}
+          className={`flex flex-col ${
+            reverseOrder ? "md:flex-row-reverse" : "md:flex-row"
+          } items-center gap-[30px] md:gap-[100px]`}
         >
-          {/* Image Component (conditionally rendered) */}
           {imageSrc && (
             <ImageComponent
               src={imageSrc}
@@ -33,7 +31,6 @@ export default function ToolsSection({
               className={imageClassName}
             />
           )}
-          {/* Text Component */}
           <TextComponent
             title={title}
             description={description}
